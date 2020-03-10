@@ -7,7 +7,8 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     margin-left: 20px;
-    width: 60%;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     border: 1px solid steelblue;
     box-shadow: 5px 5px 10px 10px grey;
@@ -16,8 +17,6 @@
 body p {
     font-size: 75%;
 }
-
-
 
 main {
     clear: both;
@@ -63,7 +62,7 @@ header{
 #navBar ul li a{
     display: block;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
     background-color: steelblue;
     color: white;
     font-weight: bold;
@@ -104,8 +103,9 @@ section h3{
 }
 
 section{
-    float: right;
-    width: 50%;
+    float: left;
+    width: 40%;
+    margin: 0 auto;
 }
 
  h1{
@@ -127,9 +127,15 @@ blockquote{
     border-left: 5px solid maroon;
 }
 
-aside{
+#leftCol{
     float: left;
-    width: 40%;
+    width: 30%;
+    margin-top: 1em;
+}
+
+#rightCol{
+    float: right;
+    width: 30%;
     margin-top: 1em;
 }
 
@@ -137,13 +143,43 @@ aside h2{
     padding: 0 1em;
 }
 
- aside ul{
+aside ul{
      line-height: 25px;
      margin-left: 3em;
      margin-top: 1em;
      padding: 0 1.5em;
  }
- 
+
+ #lefCol h3 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+#leftCol ul {
+    list-style: none;
+}
+
+#leftCol ul li {
+    width: 90%;
+    margin: 0 auto .5em;
+    border: 2px solid black;
+
+}
+
+#leftCol ul li a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: steelblue;
+    padding: .5em 0 .5em .5em;
+    color: black;
+}
+
+#leftCol ul li a:hover, #nav_list ul li a:focus {
+    background-color: lightsteelblue;
+    color: lefCol 
+
+}
+
 footer{
     margin-top: 10px;
     background: steelblue;
