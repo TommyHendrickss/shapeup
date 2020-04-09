@@ -1,232 +1,205 @@
- * {
-    margin: 0;
+* {
+    box-sizing: border-box;
+}
+
+html{
+    background-color: beige;
+}
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 900px;
+    margin: 0 auto;
     padding: 0;
- }
-
- body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    margin-left: 20px;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    border: 1px solid steelblue;
-    box-shadow: 5px 5px 10px 10px grey;
- }
-
-body p {
-    font-size: 75%;
-}
-
-main {
-    clear: both;
-}
-
-header{
-    background-image: linear-gradient(steelblue, white);
-    padding: 1.5em 0;
-}
-
- header h2 {
-     font-size: 300%;
-     margin: .5em 0;
-     color: steelblue;
-     font-style: italic;
-     text-shadow: 2px 2px 8px steelblue;
- }
-
- header h3{
-    font-size: 125%;
-    margin: .5em 0;
-    margin-bottom: 1em;
-    padding: 0 1em;
- }
- 
- header img{
-     float: left;
-     margin-right: 2em;
- }
-
-#navBar ul{
-
-    list-style: none;
-    position: relative;
-}
-
-#navBar ul li{
-    float: left;
-    width: 20%;
-
-}
-
-#navBar ul li a{
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    background-color: steelblue;
-    color: white;
-    font-weight: bold;
-    padding: 1em 0;
-}
-
-#navBar ul ul{
-    display: none;
-    position: absolute;
-    width: 100%;
-}
-
-#navBar ul ul li{
-    float: none;
-
-}
-
-#navBar ul ul li a{
-    text-align: left;
-    padding-left: .25em;
-}
-
-#navBar ul li a:hover{
-    background-color: lightsteelblue;
-    color: yellow;
-}
-
-#navBar ul li:hover > ul {
-    display: block;
-}
-section h2{
-    margin: .5em;
-    padding: 0 1em;
-}
-
-section h3{
-    padding: 0 .5em;
-}
-
-section{
-    float: left;
-    width: 40%;
-    margin: 0 auto;
-}
-
- h1{
-     font-size: 175%;
-     padding: 0 1em;
- }
- 
- p{
-     margin: 1em 0;
-     padding: 0 1em;
- }
-
-blockquote{
-    margin: 0 2em;
-    padding: 0 .5em;
-    background-color: palegoldenrod;
-    font-size: 75%;
-    font-style: italic;
-    border-left: 5px solid maroon;
-}
-
-#leftCol{
-    float: left;
-    width: 30%;
-    margin-top: 1em;
-}
-
-#rightCol{
-    float: right;
-    width: 30%;
-    margin-top: 1em;
-}
-
-aside h2{
-    padding: 0 1em;
-}
-
-aside ul{
-     line-height: 25px;
-     margin-left: 3em;
-     margin-top: 1em;
-     padding: 0 1.5em;
- }
-
- #lefCol h3 {
-    margin-bottom: 5px;
-    text-align: center;
-}
-#leftCol ul {
-    list-style: none;
-}
-
-#leftCol ul li {
-    width: 90%;
-    margin: 0 auto .5em;
-    border: 2px solid black;
-
-}
-
-#leftCol ul li a {
-    display: block;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: steelblue;
-    padding: .5em 0 .5em .5em;
-    color: black;
-}
-
-#leftCol ul li a:hover, #nav_list ul li a:focus {
-    background-color: lightsteelblue;
-    color: lefCol 
-
-}
-
-footer{
-    margin-top: 10px;
-    background: steelblue;
-    color: white;
-    font-size: 75%;
-    text-align: center;
-    padding: 1.5em 0;
-    font-variant: small-caps;
-    border: 1px solid black;
-    clear: both;
-}
-
- /*sudo links for section*/
-
- section a:link{
-     color: maroon;
- }
- 
- section a:visited{
-     color: maroon;
- }
- 
- section a:active{
-     color: steelblue;
- }
-
- section a:hover{
-    color: steelblue;
+    border: 3px solid steelblue;
+    box-shadow: 0 10px 20px 10px;
 } 
-
-aside a{
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+a {
+    text-decoration: none;
     font-weight: bold;
 }
-
-/* links for sudo classes*/
-aside a:link{
-    color: steelblue;
-}
-
-aside a:visited{
-    color: steelblue;
-}
-
-aside a:active{
+a:hover, a:focus { 
     color: maroon;
 }
 
-aside a:hover{
-   color: maroon;
+/* the styles for the header */
+header {
+    background-image: -webkit-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: -moz-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: -o-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    padding: .5em 1em; 
+    border-bottom: 2px solid steelblue; 
 } 
+header img { 
+	float: left; 
+} 
+header h2 {
+	font-size: 250%;
+	font-style: italic;
+	color: steelblue;
+	text-indent: 2em;
+	text-shadow: 3px 3px 3px steelblue;
+    margin-bottom: .3em;
+}
+header h3 {
+	font-size: 150%;
+	text-indent: 2.5em;
+	padding-bottom: .75em;
+}
+
+/*************************************************
+**************************************************
+****                                          ****
+****    the styles for the navigation menu    ****
+****                                          ****
+**************************************************
+*************************************************/
+#nav_menu {
+	clear: left;
+	border-bottom: 2px solid steelblue;
+}
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	background-color: steelblue;
+	font-weight: bold;
+	color: white;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+    top: 100%;
+    width: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#nav_menu ul li a.current {
+	color: black;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: lightsteelblue;
+}
+
+/* the styles for the section */
+section {
+    width: 75%;
+    float: right;
+    padding: 25px 30px;
+}
+section h1 {
+    font-size: 160%;
+    margin-bottom: .3em;
+}
+section h2 {
+    font-size: 130%;
+    margin-bottom: .5em;
+}
+section h3 {
+    color: maroon;
+    font-size: 110%;
+    margin-bottom: .4em;
+}
+section p {
+    font-size: 100%;
+    margin-bottom: .7em;
+}
+
+/* the styles for the sidebar */
+aside {
+    float: left;
+    width: 25%;
+    padding: 25px 0 0 30px;
+}
+aside h2 {
+	font-size: 130%;    
+	color: maroon;
+    margin-bottom: 8px;
+}
+aside ul {
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 16px;
+}
+aside a:link, aside a:visited { 
+    color: steelblue
+}
+aside a:hover, aside a:focus {
+    color: maroon;
+}
+
+/* the styles for the footer */
+footer { 
+	clear: both;
+	padding: 15px 30px;
+    background-color: steelblue;
+} 
+footer p {
+	text-align: center;
+    font-size: 85%;
+    color: white;    
+}
+
+#mobilemenu{
+    display: none;
+}
+
+@media only screen and (max-width:800px){
+    
+    #nav_menu{
+        display: none;
+    }
+    #mobilemenu{
+        display: block;
+        background-color: steelblue !important;
+    }
+    aside, section {
+        float: none;
+        width: 100%;
+    }
+    body {
+        width: 100%;
+        border: 0;
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width:500px){
+    
+    header img { 
+        float: none; 
+        display: block;
+        margin: auto;
+    } 
+    header h2, header h3{
+        text-indent: 0%;
+        text-align: center;
+    }
+}
